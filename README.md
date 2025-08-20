@@ -2,10 +2,6 @@
 
 
 
-Authentication System
-
-
-
 A simple authentication system built with .NET 9 using Onion Architecture and Repository Pattern.
 
 
@@ -18,13 +14,13 @@ This project follows Onion Architecture with four distinct layers:
 
 
 
-\- AuthSystem.API - Presentation Layer (Controllers, Middleware)
+\- ClearerAPI - Presentation Layer (Controllers, Middleware)
 
-\- AuthSystem.Application - Application Layer (Services, DTOs)
+\- Application - Application Layer (Services, DTOs)
 
-\- AuthSystem.Domain - Domain Layer (Entities, Interfaces)
+\- Domain - Domain Layer (Entities, Interfaces)
 
-\- AuthSystem.Infrastructure - Infrastructure Layer (Repositories, Database)
+\- Infrastructure - Infrastructure Layer (Repositories, Database)
 
 
 
@@ -40,11 +36,45 @@ Features
 
 \- Protected endpoints with middleware validation
 
-\- Swagger/OpenAPI documentation
+\- Swagger documentation
 
 \- Entity Framework Core with SQL Server
 
 \- Repository Pattern implementation
+
+
+
+&nbsp;
+
+\*\*Prerequisites\*\*
+
+
+
+Visual Studio 2022
+
+.NET 9 SDK
+
+SQL Server
+
+
+
+
+
+Testing: Using Swagger UI
+
+
+
+Navigate to /swagger
+
+Test registration and login endpoints
+
+Copy JWT token from login response
+
+Click "Authorize" and enter: Bearer {token}
+
+Test protected endpoints
+
+
 
 
 
@@ -64,11 +94,11 @@ API Endpoints
 
 {
 
-&nbsp; "username": "testuser",
+&nbsp; "username": "ayo",
 
-&nbsp; "email": "test@example.com",
+&nbsp; "email": "ayo@gmail.com",
 
-&nbsp; "password": "SecurePass123!"
+&nbsp; "password": "ayo123!"
 
 }
 
